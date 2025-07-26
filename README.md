@@ -15,7 +15,7 @@ It allows users to register, log in, and perform CRUD operations on blog posts. 
 
  ## **Folder Structure**
 
-- `config/` – Database configuration  
+ `config/` – Database configuration  
 - `controllers/` – Logic for authentication and blog operations  
 - `models/` – Sequelize models (user.js, blog.js)  
 - `routes/` – API routes for users and blogs  
