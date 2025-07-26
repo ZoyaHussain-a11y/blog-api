@@ -1,9 +1,9 @@
-# **Blog Management REST API**
+ **Blog Management REST API**
 
 This is a RESTful Blog Management API built using **Node.js**, **Express.js**, **MySQL**, and **Sequelize**.  
 It allows users to register, log in, and perform CRUD operations on blog posts. Each user can manage only their own blogs.
 
-## **Features**
+ **Features**
 
 - **User registration and login** (without JWT)
 - **User CRUD operations**
@@ -13,7 +13,7 @@ It allows users to register, log in, and perform CRUD operations on blog posts. 
 - **Sequelize ORM for MySQL**
 - **Clean modular folder structure**
 
-## **Folder Structure**
+ **Folder Structure**
 
 - `config/` – Database configuration  
 - `controllers/` – Logic for authentication and blog operations  
@@ -23,7 +23,7 @@ It allows users to register, log in, and perform CRUD operations on blog posts. 
 - `uploads/` – Stores uploaded images  
 - `server.js` – Entry point  
 
-## **Environment Variables (.env)**
+ **Environment Variables (.env)**
 
 DB_NAME=blog_db
 
@@ -35,13 +35,13 @@ DB_HOST=localhost
 
 PORT=4000
 
-## **API Endpoints**
+ **API Endpoints**
 
-### **Authentication Routes** (`/api/auth`)
+ **Authentication Routes** (`/api/auth`)
 - `POST /api/auth/register`  
 - `POST /api/auth/login`  
 
-### **User Routes** (`/api/users`)
+ **User Routes** (`/api/users`)
 - `GET /api/users`  
 - `GET /api/users/:id`  
 - `PUT /api/users/:id`  
@@ -55,27 +55,26 @@ PORT=4000
 - `DELETE /api/blogs/:id`  
 
 
-## **Sample URLs for Testing (use in Postman)**
+ **Sample URLs for Testing (use in Postman)**
 
-### **User Authentication**
+ **User Authentication**
 - `POST http://localhost:4000/api/auth/register`  
 - `POST http://localhost:4000/api/auth/login`  
 
-### **User Management**
+ **User Management**
 - `GET http://localhost:4000/api/users`  
 - `GET http://localhost:4000/api/users/1`  
 - `PUT http://localhost:4000/api/users/1`  
 - `DELETE http://localhost:4000/api/users/1`  
 
-### **Blog Management**
+ **Blog Management**
 - `POST http://localhost:4000/api/blogs`  
 - `GET http://localhost:4000/api/blogs`  
 - `GET http://localhost:4000/api/blogs/1`  
 - `PUT http://localhost:4000/api/blogs/1`  
 - `DELETE http://localhost:4000/api/blogs/1`  
 
-
-## **Running the Project Locally**
+ **Running the Project Locally**
 
 1. **Clone the repository**
 git clone <your-repo-url>
