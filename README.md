@@ -1,93 +1,116 @@
-**Blog Management REST API**
-This is a RESTful Blog Management API built with Node.js, Express.js, MySQL, and Sequelize ORM. It allows users to register, log in, and perform CRUD operations on blog posts. Each user can only manage (create, update, delete) their own blogs.
+Blog Management REST API
+This is a RESTful Blog Management API built using Node.js, Express.js, MySQL, and Sequelize. It allows users to register, log in, and perform CRUD operations on blog posts. Each user can manage only their own blogs.
 
-**Features**
+Features
 User registration and login (without JWT)
-User CRUD operations (Create, Read, Update, Delete)
-Blog CRUD operations (Create, Read, Update, Delete)
-Image upload for blog posts using Multer
+
+User CRUD operations
+
+Blog CRUD operations
+
+Image upload using Multer
+
 Input validation and error handling
-Sequelize-based MySQL integration
-Modular folder structure
 
-**Folder Structure**
-config/ - Database configuration
-controllers/ - Request handlers (authController, blogController)
-models/ - Sequelize models (user, blog)
-routes/ - Express route definitions (authRoutes, blogRoutes)
-middlewares/ - Auth and error handling middleware
-uploads/ - Stores uploaded blog images
-server.js - App entry point
-.env - Environment variables
+Sequelize ORM for MySQL
 
-**Environment Variables (.env)**
-DB_NAME=blog_db
-DB_USER=root
-DB_PASSWORD=
-DB_HOST=localhost
+Clean modular folder structure
+
+Folder Structure
+config/ – Database configuration
+
+controllers/ – Logic for authentication and blog operations
+
+models/ – Sequelize models (user.js, blog.js)
+
+routes/ – API routes for users and blogs
+
+middlewares/ – Custom middlewares
+
+uploads/ – Stores uploaded images
+
+server.js – Entry point
+
+Environment Variables (.env)
+ini
+Copy
+Edit
+DB_NAME=blog_db  
+DB_USER=root  
+DB_PASSWORD=  
+DB_HOST=localhost  
 PORT=4000
-
-**API Endpoints**
+API Endpoints
 Authentication Routes (/api/auth)
 POST /api/auth/register
-Register a new user
-Request Body:
-{ "username": "zoya", "password": "123456" }
 
 POST /api/auth/login
-Login an existing user
-Request Body:
-{ "username": "zoya", "password": "123456" }
 
-**Blog Routes (/api/blogs)**
-Note: Auth middleware allows only logged-in users to manage their blogs.
+User Routes (/api/users)
+GET /api/users
+
+GET /api/users/:id
+
+PUT /api/users/:id
+
+DELETE /api/users/:id
+
+Blog Routes (/api/blogs)
 POST /api/blogs
-Create a new blog post (multipart/form-data with title, content, authorId, image)
 
 GET /api/blogs
-Get all blogs
 
 GET /api/blogs/:id
-Get a specific blog by ID
 
 PUT /api/blogs/:id
-Update a blog by ID (only by the blog's author)
 
 DELETE /api/blogs/:id
-Delete a blog by ID (only by the blog's author)
 
-**Sample URLs for Testing (in Postman)**
-User Authentication Urls:
+Sample URLs for Testing (with Postman)
+User Authentication
 POST http://localhost:4000/api/auth/register
+
 POST http://localhost:4000/api/auth/login
+
+User Management
 GET http://localhost:4000/api/users
+
 GET http://localhost:4000/api/users/1
+
 PUT http://localhost:4000/api/users/1
+
 DELETE http://localhost:4000/api/users/1
 
-Blog Routes:
-
+Blog Management
 POST http://localhost:4000/api/blogs
+
 GET http://localhost:4000/api/blogs
+
 GET http://localhost:4000/api/blogs/1
+
 PUT http://localhost:4000/api/blogs/1
+
 DELETE http://localhost:4000/api/blogs/1
 
-Use Postman to test with appropriate request types and body format (JSON or form-data).
+Use Postman to test with correct methods (POST, GET, PUT, DELETE) and required JSON or form-data payloads.
 
-**How to Run the Project Locally**
+Running the Project Locally
 Clone the repository
 git clone <your-repo-url>
 cd blog-api
+
 Install dependencies
 npm install
 
-**Configure the database**
-Create a MySQL database named blog_db
-Update .env with your DB credentials
-Run migrations and start the server
+Set up the MySQL database
+
+Create a database named blog_db
+
+Update .env with correct DB credentials
+
+Run the server
 node server.js
 
-**The API will be available at:**
+Base URL
+The API runs at:
 http://localhost:4000
-
