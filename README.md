@@ -1,4 +1,4 @@
-# **Blog Management REST API**
+# Blog Management REST API
 
 This is a RESTful Blog Management API built using **Node.js**, **Express.js**, **MySQL**, and **Sequelize**.  
 It allows users to register, log in, and perform CRUD operations on blog posts. Each user can manage only their own blogs.
