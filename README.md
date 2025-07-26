@@ -16,12 +16,12 @@ It allows users to register, log in, and perform CRUD operations on blog posts. 
  ## **Folder Structure**
 
 -  config/ – Database configuration  
-- `controllers/` – Logic for authentication and blog operations  
-- `models/` – Sequelize models (user.js, blog.js)  
-- `routes/` – API routes for users and blogs  
-- `middlewares/` – Custom middlewares  
-- `uploads/` – Stores uploaded images  
-- `server.js` – Entry point  
+- controllers/ – Logic for authentication and blog operations  
+- models/ – Sequelize models (user.js, blog.js)  
+- routes/ – API routes for users and blogs  
+- middlewares/ – Custom middlewares  
+- uploads/ – Stores uploaded images  
+- server.js – Entry point  
 
 ## **Environment Variables (.env)**
 
@@ -38,41 +38,41 @@ PORT=4000
  ## **API Endpoints**
 
  ### **Authentication Routes** (`/api/auth`)
-- `POST /api/auth/register`  
-- `POST /api/auth/login`  
+- POST /api/auth/register  
+- POST /api/auth/login 
 
  ### **User Routes** (`/api/users`)
-- `GET /api/users`  
-- `GET /api/users/:id`  
-- `PUT /api/users/:id`  
-- `DELETE /api/users/:id`  
+- GET /api/users  
+- GET /api/users/:id  
+- PUT /api/users/:id  
+- DELETE /api/users/:id  
 
 ### **Blog Routes** (`/api/blogs`)
-- `POST /api/blogs`  
-- `GET /api/blogs`  
-- `GET /api/blogs/:id`  
-- `PUT /api/blogs/:id`  
-- `DELETE /api/blogs/:id`  
+- POST /api/blogs
+- GET /api/blogs  
+- GET /api/blogs/:id  
+- PUT /api/blogs/:id  
+- DELETE /api/blogs/:id  
 
 
  ## **Sample URLs for Testing (use in Postman)**
 
  ### **User Authentication**
-- `POST http://localhost:4000/api/auth/register`  
-- `POST http://localhost:4000/api/auth/login`  
+- POST http://localhost:4000/api/auth/register
+- POST http://localhost:4000/api/auth/login  
 
  ### **User Management**
-- `GET http://localhost:4000/api/users`  
-- `GET http://localhost:4000/api/users/1`  
-- `PUT http://localhost:4000/api/users/1`  
-- `DELETE http://localhost:4000/api/users/1`  
+- GET http://localhost:4000/api/users
+- GET http://localhost:4000/api/users/1  
+- PUT http://localhost:4000/api/users/1  
+- DELETE http://localhost:4000/api/users/1  
 
  ### **Blog Management**
-- `POST http://localhost:4000/api/blogs`  
-- `GET http://localhost:4000/api/blogs`  
-- `GET http://localhost:4000/api/blogs/1`  
-- `PUT http://localhost:4000/api/blogs/1`  
-- `DELETE http://localhost:4000/api/blogs/1`  
+- POST http://localhost:4000/api/blogs
+- GET http://localhost:4000/api/blogs  
+- GET http://localhost:4000/api/blogs/1  
+- PUT http://localhost:4000/api/blogs/1  
+- DELETE http://localhost:4000/api/blogs/1  
 
  ## **Running the Project Locally**
 
