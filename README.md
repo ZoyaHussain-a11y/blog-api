@@ -3,8 +3,6 @@
 This is a RESTful Blog Management API built using **Node.js**, **Express.js**, **MySQL**, and **Sequelize**.  
 It allows users to register, log in, and perform CRUD operations on blog posts. Each user can manage only their own blogs.
 
----
-
 ## **Features**
 
 - **User registration and login** (without JWT)
@@ -14,8 +12,6 @@ It allows users to register, log in, and perform CRUD operations on blog posts. 
 - **Input validation and error handling**
 - **Sequelize ORM for MySQL**
 - **Clean modular folder structure**
-
----
 
 ## **Folder Structure**
 
@@ -27,16 +23,17 @@ It allows users to register, log in, and perform CRUD operations on blog posts. 
 - `uploads/` – Stores uploaded images  
 - `server.js` – Entry point  
 
----
-
 ## **Environment Variables (.env)**
-DB_NAME=blog_db
-DB_USER=root
-DB_PASSWORD=
-DB_HOST=localhost
-PORT=4000
 
----
+DB_NAME=blog_db
+
+DB_USER=root
+
+DB_PASSWORD=
+
+DB_HOST=localhost
+
+PORT=4000
 
 ## **API Endpoints**
 
@@ -57,7 +54,6 @@ PORT=4000
 - `PUT /api/blogs/:id`  
 - `DELETE /api/blogs/:id`  
 
----
 
 ## **Sample URLs for Testing (use in Postman)**
 
@@ -78,7 +74,6 @@ PORT=4000
 - `PUT http://localhost:4000/api/blogs/1`  
 - `DELETE http://localhost:4000/api/blogs/1`  
 
----
 
 ## **Running the Project Locally**
 
