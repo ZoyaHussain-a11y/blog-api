@@ -37,17 +37,17 @@ PORT=4000
 
  ## **API Endpoints**
 
- ### **Authentication Routes** (`/api/auth`)
+ ### **Authentication Routes** (/api/auth)
 - POST /api/auth/register  
 - POST /api/auth/login 
 
- ### **User Routes** (`/api/users`)
+ ### **User Routes** (/api/users)
 - GET /api/users  
 - GET /api/users/:id  
 - PUT /api/users/:id  
 - DELETE /api/users/:id  
 
-### **Blog Routes** (`/api/blogs`)
+### **Blog Routes** (/api/blogs)
 - POST /api/blogs
 - GET /api/blogs  
 - GET /api/blogs/:id  
@@ -84,8 +84,8 @@ cd blog-api
 npm install
 
 3. **Set up the database**
-- Create a database named `blog_db` in MySQL.
-- Update `.env` file with correct DB credentials.
+- Create a database named blog_db in MySQL.
+- Update .env file with correct DB credentials.
 
 4. **Start the server**
 node server.js
